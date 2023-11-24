@@ -92,6 +92,9 @@ function Skills() {
                                 <span>
                                     SCSS
                                 </span>
+                                <span>
+                                    Redux
+                                </span>
                             </div>
                     </div>
                     <div className='skills__card'>
