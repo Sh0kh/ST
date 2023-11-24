@@ -1,0 +1,81 @@
+.Mehero{
+    background: var(--background, #282C33);
+    padding-top: 55px;
+}
+.Mehero h1{
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.Mehero h1 span{
+    color: var(--primary, #C778DD);
+     font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+
+.MeHero__content h2{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+.MeHero__content p{
+    width: 515px;
+    color: var(--gray, #ABB2BF);
+    font-size: 16px;
+    font-style: normal;
+    margin-bottom: 40px;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+}
+.MeHero__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width:920px){
+    .MeHero__content p{
+      width: 320px;
+    }
+  }
+  @media(max-width:750px){
+    .MeHero__content p{
+      width: 620px;
+    }
+    .MeHero__wrapper{
+      flex-direction: column;
+    }
+  }
+  @media(max-width:640px){
+    .MeHero__content p{
+      width: auto;
+    }
+    .MeHero__wrapper{
+      flex-direction: column;
+    }
+    .me__img1{
+      height: 360px;
+    }
+  }
+  @media(max-width:410px){
+    .me__line{
+      width: 100px;
+    }
+    .MeHero__content{
+      flex-direction: column;
+    }
+    .me__img{
+      display: none;
+    }
+  }
+
+  

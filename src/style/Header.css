@@ -1,0 +1,119 @@
+header{
+    padding-top: 32px;
+    background: var(--background, #282C33);
+    position: relative;
+}
+.header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__list{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.header__logo{
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+header h1{
+    font-size: 36px;
+    animation: gradient 20s linear infinite;
+    background: linear-gradient(to right, rgb(76, 217, 105), rgb(52, 170, 220), rgb(88, 86, 217), rgb(255, 45, 83), rgb(255, 45, 83), rgb(88, 86, 217), rgb(52, 170, 220), rgb(76, 217, 105));
+    background-size: 400%;
+    -webkit-background-clip: text;
+    color: rgba(255, 255, 255, .1);
+    font-family: sans-serif;
+}
+@keyframes gradient {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+  .header__list li{
+    cursor: pointer;
+    color: var(--white, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+.header__list li span{
+    color: var(--primary, #C778DD);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.language{
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+/* burger */
+.ham{
+    display: none;
+    z-index: 101;
+}
+/* burger */
+a{
+    text-decoration: none;
+}
+.header__link{
+    color: var(--gray, #ABB2BF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.modal__menu{
+    transition: 10s;
+    display: none;
+}
+#my-element-id{
+    transition: 10s;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: -500px;
+    background-color: black;
+    z-index: 100;
+    display: block;
+}
+.madal__list{
+    text-align: center;
+    margin-top: 150px;
+}
+.madal__list li{
+    margin-bottom: 40px;
+}
+@media(max-width:900px){
+    .header__nav{
+        display: none;
+    }
+    .ham{
+        display: block;
+    }
+}
+@media(max-width:400px){
+    header h1{
+        display: none;
+    }
+}

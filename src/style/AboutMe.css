@@ -1,0 +1,126 @@
+.Me{
+    background: var(--background, #282C33);
+    padding-bottom: 100px;
+}
+.me__wrapper h1{
+    color: var(--white, #FFF);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+.me__wrapper h1 span {
+    color: var(--primary, #C778DD);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.me__line{
+    width: 330px;
+    height: 1px;
+    margin-bottom: 20px;
+    background-color: #C778DD;
+}
+.me__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.me__content h2{
+    color: var(--gray, #ABB2BF);
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+.me__content p{
+    color: var(--gray, #ABB2BF);
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    width: 515px;
+}
+.me__btn{
+    margin-top: 40px;
+    display: inline-flex;
+    padding: 8px 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border: 1px solid var(--primary, #C778DD);
+    color: var(--white, #FFF);
+    font-size: 16px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.me__grid{
+    display: flex;
+    justify-content: space-between;
+}
+.me__img{
+    position: relative;
+}
+.me__img2{
+    position: absolute;
+    top: 70px;
+    right: 255px;
+}
+.me__img3{
+    position: absolute;
+    bottom: 185px;
+    right: 35px;
+}
+.me__img4{
+    position: absolute;
+    bottom: 24px;
+    right: 0;
+}
+@media(max-width:920px){
+  .me__content p{
+    width: 320px;
+  }
+  .me__line{
+    width: 200px;
+  }
+}
+@media(max-width:750px){
+  .me__content p{
+    width: 620px;
+  }
+  .me__grid{
+    flex-direction: column;
+  }
+}
+@media(max-width:640px){
+  .me__content p{
+    width: auto;
+  }
+  .me__grid{
+    flex-direction: column;
+  }
+  .me__img1{
+    height: 360px;
+  }
+}
+@media(max-width:410px){
+  .me__line{
+    width: 100px;
+  }
+  .me__grid{
+    flex-direction: column;
+  }
+  .me__img{
+    display: none;
+  }
+}
+@media(max-width:310px){
+  .me__line{
+    width: 30px;
+  }
+}

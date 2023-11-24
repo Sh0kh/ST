@@ -1,0 +1,25 @@
+.soon{
+    margin-bottom: 100px;
+}
+.soon h1{
+    color: var(--white, #FFF);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+.soon h1 span{
+    color: var(--primary, #C778DD);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.soon p{
+    color: var(--white, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

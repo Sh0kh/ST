@@ -1,0 +1,37 @@
+.MeSkills{
+    background: var(--background, #282C33);
+    padding-top: 113px;
+    padding-bottom: 113px;
+}
+.MeSkills__wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+.MeSkills h1{
+    color: var(--white, #FFF);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+.MeSkills h1 span {
+    color: var(--primary, #C778DD);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+@media(max-width:560px){
+    .MeSkills__wrapper{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+}
+@media(max-width:260px){
+    .MeSkills__wrapper{
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+}

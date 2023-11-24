@@ -1,0 +1,100 @@
+.contact{
+    background: var(--background, #282C33);
+    padding-bottom: 100px;
+}
+.title__contact h1{
+    color: var(--white, #FFF);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.title__contact h1 span{
+    color: var(--primary, #C778DD);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.contact__line{
+    background-color: var(--primary, #C778DD);
+    width: 127px;
+    height: 1px;
+    margin-top: 10px;
+}
+.title__contact{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.contact__content p{
+    color: var(--gray, #ABB2BF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    width: 505px;
+    line-height: normal;
+}
+.contact__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact__card h2{
+    color: var(--white, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+.contact__card a{
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: var(--gray, #ffffff);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.contact__card{
+    display: inline-flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border: 1px solid var(--gray, #ABB2BF);
+}
+.Con__btn{
+    margin-top: 50px;
+    text-decoration: none;
+    color: var(--white, #FFF);
+    display: inline-flex;
+    padding: 8px 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border: 1px solid var(--primary, #C778DD);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+@media(max-width:870px){
+    .contact__wrapper{
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+}
+@media(max-width:540px){
+  .contact__content p{
+    width: auto;
+  }
+}
+@media(max-width:360px){
+ .contact__card{
+    padding: 5px;
+ }
+}

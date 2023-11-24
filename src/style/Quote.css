@@ -1,0 +1,88 @@
+.quote{
+    background: var(--background, #282C33);
+    position: relative;
+    padding-bottom: 200px;
+}
+.quote1{
+}
+.quote__wrapper{
+    padding: 32px;
+    width: 812px;
+    margin:  0 auto;
+    border: 1px solid var(--gray, #ABB2BF);
+    margin-bottom:0px;
+}
+.quote__wrapper h1{
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    font-family: Fira Code;
+}
+.quote__wrapper2{
+    border: 1px solid var(--gray, #ABB2BF);
+    width: 162px;
+    padding: 16px;
+    position: absolute;
+    top: 132px;
+    right: 193px;
+}
+.quote__wrapper2 h1{
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-family: Fira Code;
+}
+.quote__wrapper2 legend{
+    margin-left: 100px;
+}
+.quote__bg{
+    position: absolute;
+    right: 0;
+    top: 90px;
+}
+.qt1{
+    position: relative;
+}
+@media(max-width:890px){
+    .quote__wrapper{
+        width: auto;
+    }
+}
+@media(max-width:670px){
+    .quote__wrapper2{
+        top: 140px;
+    }
+    .quote__bg{
+        display: none;
+    }
+}
+@media(max-width:400px){
+    .quote__wrapper2{
+        top: 172px;
+        right: 100px;
+    }
+}
+
+@media(max-width:360px){
+    .quote__wrapper2{
+        top: 205px;
+        right: 40px;
+    }
+}
+@media(max-width:250px){
+    .quote__wrapper2{
+        top: 235px;
+        right: 40px;
+    }
+}
+@media(max-width:231px){
+    .quote__wrapper2{
+        top: 310px;
+        right: 40px;
+    }
+}
