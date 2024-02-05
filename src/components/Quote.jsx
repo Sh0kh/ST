@@ -27,14 +27,6 @@ function Quote() {
                     {t('quote')}
                 </h1>
            </fieldset>
-           <fieldset className='quote__wrapper2'>
-                <legend>
-                    <img src={quote} alt="" />
-                </legend>
-                <h1>
-                    {t('T,sh')}
-                </h1>
-           </fieldset>
            </div>
             <img className='quote__bg' src={quote2} alt="" />
         </div>

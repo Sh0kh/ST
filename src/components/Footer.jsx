@@ -24,9 +24,6 @@ function Footer() {
                     </NavLink>
                 </div>
             </div>
-            <h4 className='footer__sp'>
-                {t('Cpr')}
-            </h4>
         </div>
     </footer>
   )

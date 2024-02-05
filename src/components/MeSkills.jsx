@@ -75,8 +75,17 @@ function MeSkills() {
                                 {t('Frameworks')}
                             </h2>
                             <div className='card__wrapper'>
+                            <span>
+                                    React.js
+                                </span>
                                 <span>
-                                    React
+                                    Next.js
+                                </span>
+                                <span>
+                                    Vue.js
+                                </span>
+                                <span>
+                                    Nuxt.js
                                 </span>
                             </div>
                     </div> 

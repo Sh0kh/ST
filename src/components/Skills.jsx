@@ -52,10 +52,7 @@ function Skills() {
                             </h2>
                             <div className='card__wrapper'>
                                 <span>
-                                    Python
-                                </span>
-                                <span>
-                                    Java Script
+                                    JavaScript
                                 </span>
                             </div>
                     </div>
@@ -103,7 +100,16 @@ function Skills() {
                             </h2>
                             <div className='card__wrapper'>
                                 <span>
-                                    React
+                                    React.js
+                                </span>
+                                <span>
+                                    Next.js
+                                </span>
+                                <span>
+                                    Vue.js
+                                </span>
+                                <span>
+                                    Nuxt.js
                                 </span>
                             </div>
                     </div>
