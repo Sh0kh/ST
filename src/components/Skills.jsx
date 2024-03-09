@@ -1,9 +1,9 @@
 import React from 'react'
 import '../style/Skills.css'
-import skills1 from '../img/Hero2.png'
-import skills2 from '../img/Hero3.png'
-import skills3 from '../img/skills.png'
-import skills4 from '../img/skills2.png'
+// import skills1 from '../img/Hero2.png'
+// import skills2 from '../img/Hero3.png'
+// import skills3 from '../img/skills.png'
+// import skills4 from '../img/skills2.png'
 import { useTranslation } from 'react-i18next';
 
 function Skills() {
@@ -27,7 +27,7 @@ function Skills() {
 
             </div>
             <div className='skills__wrapper'>
-                <div className='skills__img'>
+            {/* <div className='skills__img'>
                     <img data-aos="fade-up" data-aos-duration="1500"
                     data-aos-anchor-placement="center-bottom" className='skills1' src={skills1} alt="" />
                     <img data-aos-duration="1500" data-aos="zoom-out-up" className='skills2' src={skills2} alt="" />
@@ -39,14 +39,14 @@ function Skills() {
                     data-aos-easing="ease-in-back"
                     data-aos-delay="300"
                     data-aos-offset="0" className='skills5'src={skills4} alt="" />
-                </div> 
+                </div>  */}
                 <div data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-delay="300"
                 data-aos-offset="0" 
                 data-aos-duration="1500"
                 className='skills__content'>
-                <div className='skills__card'>
+                {/* <div className='skills__card'>
                             <h2>    
                                 {t('Language')}
                             </h2>
@@ -112,6 +112,125 @@ function Skills() {
                                     Nuxt.js
                                 </span>
                             </div>
+                    </div> */}
+                    <div className='skills-content'>
+                        <div className='skills-card'>
+                            <h2>
+                                HTML
+                            </h2>
+                            <div className='skills-grid'>
+                                <div className='skills-level'>
+                                    <div className='skills-html'></div>
+                                </div>
+                                <h3>
+                                    90<span>%</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div className='skills-card'>
+                            <h2>
+                                СSS
+                            </h2>
+                            <div className='skills-grid'>
+                                <div className='skills-level'>
+                                    <div className='skills-css'></div>
+                                </div>
+                                <h3>
+                                    95<span>%</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div className='skills-card'>
+                            <h2>
+                                SСSS
+                            </h2>
+                            <div className='skills-grid'>
+                                <div className='skills-level'>
+                                    <div className='skills-css'></div>
+                                </div>
+                                <h3>
+                                    95<span>%</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div className='skills-card'>
+                            <h2>
+                                JavaScript
+                            </h2>
+                            <div className='skills-grid'>
+                                <div className='skills-level'>
+                                    <div className='skills-js'></div>
+                                </div>
+                                <h3>
+                                    75<span>%</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div className='skills-card'>
+                            <h2>
+                                React
+                            </h2>
+                            <div className='skills-grid'>
+                                <div className='skills-level'>
+                                    <div className='skills-react'></div>
+                                </div>
+                                <h3>
+                                    75<span>%</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div className='skills-card'>
+                            <h2>
+                                Redux
+                            </h2>
+                            <div className='skills-grid'>
+                                <div className='skills-level'>
+                                    <div className='skills-react'></div>
+                                </div>
+                                <h3>
+                                    75<span>%</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div className='skills-card'>
+                            <h2>
+                                Next.js
+                            </h2>
+                            <div className='skills-grid'>
+                                <div className='skills-level'>
+                                    <div className='skills-react'></div>
+                                </div>
+                                <h3>
+                                    70<span>%</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div className='skills-card'>
+                            <h2>
+                                Vue.js
+                            </h2>
+                            <div className='skills-grid'>
+                                <div className='skills-level'>
+                                    <div className='skills-vue'></div>
+                                </div>
+                                <h3>
+                                    70<span>%</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div className='skills-card'>
+                            <h2>
+                                Nuxt.js
+                            </h2>
+                            <div className='skills-grid'>
+                                <div className='skills-level'>
+                                    <div className='skills-vue'></div>
+                                </div>
+                                <h3>
+                                    70<span>%</span>
+                                </h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

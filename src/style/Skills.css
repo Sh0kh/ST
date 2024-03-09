@@ -95,6 +95,58 @@
     line-height: normal;
     margin-left: 10px;
 }
+.skills-card{
+    margin-bottom: 20px;
+}
+.skills-content{
+    margin-top: 50px;
+}
+.skills-card h2{
+    color: white;
+    margin-bottom: 10px;
+}
+.skills-level{
+    width: 300px;
+    height: 20px;
+    border: 2px solid #ABB2BF;
+}
+.skills-level div{
+    height: 100%;
+    background-color: #C778DD;
+}
+.skills-html{
+    width: 90%;
+}
+.skills-grid h3{
+    color: white;
+    cursor: pointer;
+}
+.skills-grid h3 span{
+    color: #C778DD;
+}
+.skills-grid{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.skills-css{
+    width: 95%;
+}
+.skills-js{
+    width: 75%;
+}
+.skills-react{
+    width: 75%;
+}
+.skills-vue{
+    width: 70%;
+}
+.skills-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    gap:0 250px;
+}
 @media(max-width:890px){
     .skills__content{
         grid-template-columns: repeat(1,1fr);
