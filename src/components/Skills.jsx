@@ -26,93 +26,12 @@ function Skills() {
                 </div>
 
             </div>
-            <div className='skills__wrapper'>
-            {/* <div className='skills__img'>
-                    <img data-aos="fade-up" data-aos-duration="1500"
-                    data-aos-anchor-placement="center-bottom" className='skills1' src={skills1} alt="" />
-                    <img data-aos-duration="1500" data-aos="zoom-out-up" className='skills2' src={skills2} alt="" />
-                    <img data-aos-duration="1500" data-aos="zoom-out-left" className='skills3' src={skills2} alt="" />
-                    <img data-aos-duration="1500" data-aos="fade-right"
-                        data-aos-offset="300" 
-                        data-aos-easing="ease-in-sine"  className='skills4'src={skills3} alt="" />
-                    <img  data-aos="fade-zoom-in" data-aos-duration="1500"
-                    data-aos-easing="ease-in-back"
-                    data-aos-delay="300"
-                    data-aos-offset="0" className='skills5'src={skills4} alt="" />
-                </div>  */}
                 <div data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-delay="300"
                 data-aos-offset="0" 
                 data-aos-duration="1500"
                 className='skills__content'>
-                {/* <div className='skills__card'>
-                            <h2>    
-                                {t('Language')}
-                            </h2>
-                            <div className='card__wrapper'>
-                                <span>
-                                    JavaScript
-                                </span>
-                            </div>
-                    </div>
-                    <div className='skills__card'>
-                            <h2>    
-                                {t('Tools')}
-                            </h2>
-                            <div className='card__wrapper'>
-                                <span>
-                                    VSCode
-                                </span>
-                                <span>
-                                    Figma
-                                </span>
-                                <span>
-                                    Git
-                                </span>
-                                <span>
-                                    Font
-                                </span>
-                            </div>
-                    </div>
-                    <div className='skills__card'>
-                            <h2>    
-                                {t('Other')}
-                            </h2>
-                            <div className='card__wrapper'>
-                                <span>
-                                    HTML
-                                </span>
-                                <span>
-                                    CSS
-                                </span>
-                                <span>
-                                    SCSS
-                                </span>
-                                <span>
-                                    Redux
-                                </span>
-                            </div>
-                    </div>
-                    <div className='skills__card'>
-                            <h2>    
-                                {t('Frameworks')}
-                            </h2>
-                            <div className='card__wrapper'>
-                                <span>
-                                    React.js
-                                </span>
-                                <span>
-                                    Next.js
-                                </span>
-                                <span>
-                                    Vue.js
-                                </span>
-                                <span>
-                                    Nuxt.js
-                                </span>
-                            </div>
-                    </div> */}
                     <div className='skills-content'>
                         <div className='skills-card'>
                             <h2>
@@ -233,7 +152,6 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
   )

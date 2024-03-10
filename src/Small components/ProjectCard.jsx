@@ -4,7 +4,7 @@ import '../style/ProjectCard.css'
 import { useTranslation } from 'react-i18next';
 
 
-function ProjectCard({title,img,text,btn}) {
+function ProjectCard({title,img,text,btn,skills}) {
 
     // язык
     const { t } = useTranslation();
@@ -17,7 +17,7 @@ function ProjectCard({title,img,text,btn}) {
         <div className='pr2'>
           <div className='skils__grid'>
               <h3>
-                React
+                {skills}
               </h3>
               <h3>
                 HTML
@@ -35,7 +35,7 @@ function ProjectCard({title,img,text,btn}) {
           <p>
             {text}
           </p>
-          <a href={btn}>
+          <a  href={btn}>
               {t('Live')}
           </a>
         </div>
