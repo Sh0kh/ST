@@ -35,7 +35,7 @@ function ProjectCard({title,img,text,btn,skills}) {
           <p>
             {text}
           </p>
-          <a  href={btn}>
+          <a target="_blank" rel="noopener noreferrer" href={btn}>
               {t('Live')}
           </a>
         </div>

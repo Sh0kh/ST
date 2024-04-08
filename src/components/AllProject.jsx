@@ -18,7 +18,7 @@ function Project() {
                     data-aos-duration="1500" className='pr1'>
                     <h1>
                         <span>#</span>
-                        {t('Project')}
+                        {t('AllProject')}
                     </h1>
                     <div className='pr__line'>
 
@@ -28,7 +28,7 @@ function Project() {
                   {/* {t('View all')}  */}
                 </h2>
             </div>
-            <div className='project__wrapper2'>
+            <div className='project__wrapper2 grid2'>
                 <ProjectCard img={pr1} skills='GSAP' title='NFT' text={`"${t('web1')}"`} btn='https://nft-st-prollax.netlify.app'/>
                 <ProjectCard img={pr2} skills='React' title='Coca' text={`"${t('web2')}"`} btn='https://bright-zuccutto-74822f.netlify.app'/>
                 <ProjectCard img={pr3} skills='GSAP' title='Gallary' text={`"${t('web3')}"`} btn='https://st-gallary.netlify.app/'/>

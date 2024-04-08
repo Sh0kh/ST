@@ -1,7 +1,11 @@
 header{
     padding-top: 32px;
+    padding-bottom: 30px;
     background: var(--background, #282C33);
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 .header__wrapper{
     display: flex;

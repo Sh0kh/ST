@@ -1,12 +1,11 @@
 import React from 'react'
-import Project from '../components/Project'
 import Soon from '../components/Soon'
-
+import AllProject from '../components/AllProject'
 function Work() {
   return (
     <div>
-        <Project/>
-        <Soon/>
+        <AllProject/>
+        {/* <Soon/> */}
     </div>
   )
 }
