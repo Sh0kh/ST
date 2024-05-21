@@ -2,6 +2,12 @@ import React from 'react'
 import '../style/ProjectCard.css'
 
 import { useTranslation } from 'react-i18next';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
+
+
+gsap.registerPlugin( ScrollTrigger);
 
 
 function ProjectCard({title,img,text,btn,skills}) {
@@ -10,9 +16,24 @@ function ProjectCard({title,img,text,btn,skills}) {
     const { t } = useTranslation();
   // язык
 
-
+useGSAP(()=>{
+  gsap.fromTo('.project__card',
+  {
+      opacity:0,
+  },
+  {
+     opacity:2,
+      scrollTrigger: {
+        trigger: '.project__card',
+        start: 'top 65%',
+        scrub: 5,
+        // markers: true
+      },
+  }
+)
+})
   return (
-    <div data-aos="flip-left" data-aos-duration="2000" className='project__card'>
+    <div  data-speed="1.2" className='project__card'>
         <img src={img} alt="" />
         <div className='pr2'>
           <div className='skils__grid'>

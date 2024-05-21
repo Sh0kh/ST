@@ -46,6 +46,11 @@ footer{
     font-weight: 400;
     line-height: normal;
     }
+    .footer__btn:hover{
+        background-color: #C778DD;
+        color: #282C33;
+        transition: 0.5s;
+    }
     @media(max-width:330px){
         .footer__wrapper{
             flex-direction: column;

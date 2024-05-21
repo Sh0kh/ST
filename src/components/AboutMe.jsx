@@ -6,21 +6,56 @@ import me2 from '../img/me2.png'
 import me3 from '../img/me3.png'
 import { NavLink } from 'react-router-dom';
 
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
+
+gsap.registerPlugin( ScrollTrigger);
+
 
 function AboutMe() {
     
      // язык
      const { t } = useTranslation();
  // язык
+
+ useGSAP(()=>{
+    gsap.fromTo('.me__line',
+{
+    x:'180%'
+},
+{
+    x:'0%',
+    scrollTrigger: {
+      trigger: '.me__line',
+      start: 'top 99%',
+      scrub: 4,
+    //   markers: true
+    },
+}
+)
+    gsap.fromTo('.me__content',
+{
+    opacity:0,
+},
+{
+    opacity:2,
+    scrollTrigger: {
+      trigger: '.me__content',
+      start: 'top 70%',
+      scrub: 4,
+    //   markers: true
+    },
+}
+)
+})
   return (
     <section className='Me'>
         <div className='container'>
             
             <div className='me__grid'> 
-                <div className='me__content'>
-                    <div data-aos="fade-down"
-                        data-aos-easing="linear"
-                        data-aos-duration="1500" className='me__wrapper'>
+                <div data-speed="1.1" className='me__content'>
+                    <div  className='me__wrapper'>
                         <h1>
                             <span>#</span>
                             {t('About-Me')}
@@ -29,38 +64,24 @@ function AboutMe() {
 
                         </div>
                     </div>  
-                    <h2 data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-duration="1500"
-                    data-aos-easing="ease-in-sine">
+                    <h2 >
                         {t('Hello')}
                     </h2>
-                    <p data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-duration="1500"
-                    data-aos-easing="ease-in-sine" className='me__text1'>
+                    <p className='me__text1'>
                         {t('A-me')}
                     </p>
-                    <p data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-duration="1500"
-                    data-aos-easing="ease-in-sine"> 
+                    <p > 
                         {t('A-me2')}
                     </p>
-                    <NavLink data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-duration="1500"
-                    data-aos-easing="ease-in-sine" className='me__btn' to="/Me">
-                        {t('Read more')}
+                    <NavLink  className='me__btn' to="/Me">
+                        {t('Read more')}    
                     </NavLink>
                 </div>
-                <div data-aos="fade-up"
-                data-aos-duration="1500"
-                    data-aos-anchor-placement="top-bottom" className='me__img'>
-                    <img className='me__img1' src={me1} alt="" />
-                    <img className='me__img2' src={me2} alt="" />
-                    <img className='me__img3' src={me3} alt="" />
-                    <img className='me__img4' src={me2} alt="" />
+                <div  className='me__img'>
+                    <img data-speed="1.7" className='me__img1' src={me1} alt="" />
+                    <img data-speed="1.5" className='me__img2' src={me2} alt="" />
+                    <img data-speed="2.1" className='me__img3' src={me3} alt="" />
+                    <img data-speed="2.5" className='me__img4' src={me2} alt="" />
                 </div>
             </div>
             

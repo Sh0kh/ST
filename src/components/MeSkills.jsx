@@ -3,23 +3,55 @@ import '../style/MeSkills.css'
 
 import { useTranslation } from 'react-i18next';
 
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
 
+gsap.registerPlugin( ScrollTrigger);
 function MeSkills() {
       // язык
       const { t } = useTranslation();
         // язык
+        useGSAP(()=>{
+            gsap.fromTo('.MeSkills-title',
+            {
+                opacity:0,
+            },
+            {
+               opacity:2,
+                scrollTrigger: {
+                  trigger: '.MeSkills-title',
+                  start: 'top 65%',
+                  scrub: 5,
+                  // markers: true
+                },
+            }
+          )
+            gsap.fromTo('.skills__card',
+            {
+                opacity:0,
+            },
+            {
+               opacity:2,
+                scrollTrigger: {
+                  trigger: '.skills__card',
+                  start: 'top 70%',
+                  scrub: 5,
+                  // markers: true
+                },
+            }
+          )
+
+        })
   return (
     <section className='MeSkills'>
         <div className='container'>
-            <h1  data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500">
+            <h1 data-speed="1.2" className='MeSkills-title'>
                 <span>#</span>
                 {t('skills')}
             </h1>
             <div className='MeSkills__wrapper'>
-            <div data-aos="fade-up"
-                data-aos-duration="1500" data-aos-anchor-placement="top-bottom" className='skills__card'>
+            <div data-speed="1.3"  className='skills__card'>
                             <h2>    
                                 {t('Language')}
                             </h2>
@@ -32,8 +64,7 @@ function MeSkills() {
                                 </span>
                             </div>
                     </div>
-                    <div data-aos="fade-up"
-                        data-aos-duration="2000"    data-aos-anchor-placement="top-bottom" className='skills__card'>
+                    <div data-speed="1.4"  className='skills__card'>
                             <h2>    
                                 {t('Tools')}
                             </h2>
@@ -52,8 +83,7 @@ function MeSkills() {
                                 </span>
                             </div>
                     </div>
-                    <div data-aos="fade-up"
-                         data-aos-duration="2500"   data-aos-anchor-placement="top-bottom" className='skills__card'>
+                    <div data-speed="1.5"  className='skills__card'>
                             <h2>    
                                 {t('Other')}
                             </h2>
@@ -69,8 +99,7 @@ function MeSkills() {
                                 </span>
                             </div>
                     </div>
-                    <div data-aos="fade-up"
-                   data-aos-duration="3000" data-aos-anchor-placement="top-bottom"  className='skills__card'>
+                    <div data-speed="1.6"  className='skills__card'>
                             <h2>    
                                 {t('Frameworks')}
                             </h2>

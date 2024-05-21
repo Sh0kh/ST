@@ -60,6 +60,11 @@
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
+    transition: 0.5s;
+}
+.project__card a:hover{
+    background-color: #C778DD;
+    color: #282C33;
 }
 @media(max-width:350px){
     .project__card img{

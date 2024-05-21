@@ -1,6 +1,6 @@
 .Mehero{
     background: var(--background, #282C33);
-    padding-top: 55px;
+    padding-top: 155px;
 }
 .Mehero h1{
     color: #FFF;
@@ -8,6 +8,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    margin-top: 50px;
 }
 .Mehero h1 span{
     color: var(--primary, #C778DD);
@@ -15,7 +16,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 
@@ -25,7 +26,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .MeHero__content p{
     width: 515px;
@@ -37,8 +38,9 @@
     line-height: 25px; /* 156.25% */
 }
 .MeHero__wrapper{
+  margin-top: 20px;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
 }
 
@@ -66,7 +68,7 @@
       height: 360px;
     }
   }
-  @media(max-width:410px){
+  @media(max-width:430px){
     .me__line{
       width: 100px;
     }
@@ -75,6 +77,9 @@
     }
     .me__img{
       display: none;
+    }
+    .MeHero__content{
+      text-align: center;
     }
   }
 

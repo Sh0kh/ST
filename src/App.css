@@ -16,3 +16,17 @@ li{
 body{
   background: var(--background, #282C33);
 }
+::-webkit-scrollbar{
+  width: 13px;
+}
+
+::-webkit-scrollbar-track{
+  background: #282C33;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb{
+  background: #C778DD;
+  border-radius: 15px;
+
+}

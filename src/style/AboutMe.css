@@ -58,6 +58,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    transition: 0.5s;
 }
 .me__grid{
     display: flex;
@@ -73,13 +74,17 @@
 }
 .me__img3{
     position: absolute;
-    bottom: 185px;
+    bottom: 225px;
     right: 35px;
 }
 .me__img4{
     position: absolute;
-    bottom: 24px;
+    bottom: 154px;
     right: 0;
+}
+.me__btn:hover{
+  background-color: #C778DD;
+  color: #282C33;
 }
 @media(max-width:920px){
   .me__content p{
@@ -122,5 +127,13 @@
 @media(max-width:310px){
   .me__line{
     width: 30px;
+  }
+}
+@media(max-width:430px){
+  .me__img{
+    display: none;
+  }
+  .me__content{
+    text-align: center;
   }
 }

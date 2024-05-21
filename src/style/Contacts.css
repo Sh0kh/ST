@@ -18,7 +18,7 @@
 }
 .contact__line{
     background-color: var(--primary, #C778DD);
-    width: 127px;
+    width: 427px;
     height: 1px;
     margin-top: 10px;
 }
@@ -51,7 +51,7 @@
 }
 .contact__card a{
     display: block;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     text-decoration: none;
     color: var(--gray, #ffffff);
     font-size: 16px;
@@ -60,12 +60,15 @@
     line-height: normal;
 }
 .contact__card{
-    display: inline-flex;
+    /* display: inline-flex; */
     padding: 16px;
-    flex-direction: column;
-    align-items: flex-start;
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
     gap: 16px;
     border: 1px solid var(--gray, #ABB2BF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .Con__btn{
     margin-top: 50px;
@@ -80,12 +83,29 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    transition: 0.5s;
+}
+.Con__btn:hover{
+    background-color: #C778DD;
+    color: #282C33;
+}
+/* .contact__content{
+    text-align: center;
+}
+.contact__content p{
+    margin: 0 auto;
+} */
+.contact__card svg{
+    font-size: 35px;
 }
 @media(max-width:870px){
     .contact__wrapper{
         flex-direction: column;
         gap: 50px;
         text-align: center;
+    }
+    .contact__line{
+        width: 100px;
     }
 }
 @media(max-width:540px){
@@ -97,4 +117,9 @@
  .contact__card{
     padding: 5px;
  }
+}
+@media(max-width:430px){
+    .contact__content{
+        text-align: center;
+    }
 }
