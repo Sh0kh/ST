@@ -86,6 +86,9 @@
   background-color: #C778DD;
   color: #282C33;
 }
+.me__img1{
+  width: 400px;
+}
 @media(max-width:920px){
   .me__content p{
     width: 320px;

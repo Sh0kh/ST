@@ -5,18 +5,45 @@ import ProjectCard from '../Small components/ProjectCard';
 import pr1 from '../img/port2.png'
 import pr2 from '../img/pr2.png'
 import pr3 from '../img/pr3.png'
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
+
+gsap.registerPlugin( ScrollTrigger);
+
 function Project() {
   // язык
     const { t } = useTranslation();
   // язык
+
+useGSAP(()=>{
+  gsap.fromTo('.pr1-title',
+  {
+      opacity:0,
+  },
+  {
+     opacity:2,
+     duration:5
+  }
+)
+  gsap.fromTo('.pr__line',
+  {
+      opacity:0,
+      x:'100%'
+  },
+  {
+    x:'0%',
+     opacity:2,
+     duration:2
+  }
+)
+})
   return (
     <section className='project'>
         <div className='container'>
             <div className='project__wrapper1'>
-                <div data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500" className='pr1'>
-                    <h1>
+                <div className='pr1'>
+                    <h1 className='pr1-title'>
                         <span>#</span>
                         {t('AllProject')}
                     </h1>
