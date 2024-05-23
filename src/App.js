@@ -1,7 +1,6 @@
 
 import './App.css';
 import Header from '../src/components/Header.jsx'
-import Footer from './components/Footer';
 import { Outlet } from 'react-router-dom';
 import gsap from 'gsap-trial';
 import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';

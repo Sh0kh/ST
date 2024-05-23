@@ -1,5 +1,4 @@
 import React from 'react'
-import Soon from '../components/Soon'
 import AllProject from '../components/AllProject'
 import { ScrollSmoother } from 'gsap-trial/ScrollSmoother';
 import { useGSAP } from '@gsap/react';

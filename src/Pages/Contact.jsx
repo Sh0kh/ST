@@ -1,10 +1,8 @@
 import React from 'react'
 import ConHero from '../components/ConHero.jsx'
-import ConAll from '../components/ConAll.jsx'
 import { ScrollSmoother } from 'gsap-trial/ScrollSmoother';
 import { useGSAP } from '@gsap/react';
 import { useLocation } from 'react-router-dom'
-import Contacts from '../components/Contacts'
 
 function Contact() {
   const location = useLocation();
