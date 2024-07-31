@@ -1,24 +1,8 @@
 import React from 'react'
 import ConHero from '../components/ConHero.jsx'
-import { ScrollSmoother } from 'gsap-trial/ScrollSmoother';
-import { useGSAP } from '@gsap/react';
-import { useLocation } from 'react-router-dom'
 
 function Contact() {
-  const location = useLocation();
 
-  useGSAP(
-    () => {
-      ScrollSmoother.create({
-        smooth: 3,
-        effects: true,
-        smoothTouch: 2,
-      });
-    },
-    {
-      dependencies: [location],
-    }
-  );
   return (
     <div  id="smooth-wrapper">
        <div id="smooth-content">
