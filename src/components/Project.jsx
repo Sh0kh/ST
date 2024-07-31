@@ -48,14 +48,14 @@ function Project() {
         },
     }
 )
-gsap.fromTo('.pr-title',
+gsap.fromTo('.pr_title',
   {
       opacity:0,
   },
   {
      opacity:1,
       scrollTrigger: {
-        trigger: '.pr-title',
+        trigger: '.pr_title',
         start: 'top',
        start: 'top 99%',
         scrub: 5,
@@ -69,7 +69,7 @@ gsap.fromTo('.pr-title',
         <div className='container'>
             <div className='project__wrapper1'>
                 <div data-speed="1.1" className='pr1'>
-                    <h1 className='pr-title'>
+                    <h1 className='pr_title'>
                         <span>#</span>
                         {t('Project')}
                     </h1>

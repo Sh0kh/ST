@@ -35,14 +35,14 @@ function Skills() {
                 },
             }
         )
-        gsap.fromTo('.sk-title',
+        gsap.fromTo('.sk_title',
             {
                 opacity: 0,
             },
             {
                 opacity: 1,
                 scrollTrigger: {
-                    trigger: '.sk-title',
+                    trigger: '.sk_title',
                     start: 'top',
                     start: 'top 99%',
                     scrub: 5,
@@ -51,14 +51,14 @@ function Skills() {
             }
         )
 
-        gsap.fromTo('.skills-card',
+        gsap.fromTo('.skills_card',
             {
                 opacity: 0,
             },
             {
                 opacity: 1,
                 scrollTrigger: {
-                    trigger: '.skills-card',
+                    trigger: '.skills_card',
                     start: 'top',
                     start: 'top 99%',
                     scrub: 5,
@@ -71,7 +71,7 @@ function Skills() {
         <section className='skills'>
             <div className='container'>
                 <div data-speed="1.1" className='skills__title'>
-                    <h1 className='sk-title'>
+                    <h1 className='sk-title sk_title'>
                         <span>#</span>
                         {t('Skills')}
                     </h1>
@@ -83,7 +83,7 @@ function Skills() {
                 <div
                     className='skills__content'>
                     <div className='skills-content'>
-                        <div data-speed="1.15" className='skills-card'>
+                        <div data-speed="1.15" className='skills-card skills_card'>
                             <h2>
                                 HTML
                             </h2>
@@ -96,7 +96,7 @@ function Skills() {
                                 </h3>
                             </div>
                         </div>
-                        <div data-speed="1.15" className='skills-card'>
+                        <div data-speed="1.15" className='skills-card skills_card'>
                             <h2>
                                 СSS
                             </h2>
@@ -109,7 +109,7 @@ function Skills() {
                                 </h3>
                             </div>
                         </div>
-                        <div data-speed="1.20" className='skills-card'>
+                        <div data-speed="1.20" className='skills-card skills_card'>
                             <h2>
                                 SСSS
                             </h2>
@@ -122,7 +122,7 @@ function Skills() {
                                 </h3>
                             </div>
                         </div>
-                        <div data-speed="1.20" className='skills-card'>
+                        <div data-speed="1.20" className='skills-card skills_card'>
                             <h2>
                                 JavaScript
                             </h2>
@@ -135,7 +135,7 @@ function Skills() {
                                 </h3>
                             </div>
                         </div>
-                        <div data-speed="1.25" className='skills-card'>
+                        <div data-speed="1.25" className='skills-card skills_card'>
                             <h2>
                                 React
                             </h2>
@@ -148,7 +148,7 @@ function Skills() {
                                 </h3>
                             </div>
                         </div>
-                        <div data-speed="1.25" className='skills-card'>
+                        <div data-speed="1.25" className='skills-card skills_card'>
                             <h2>
                                 Redux
                             </h2>
@@ -161,7 +161,7 @@ function Skills() {
                                 </h3>
                             </div>
                         </div>
-                        <div data-speed="1.30" className='skills-card'>
+                        <div data-speed="1.30" className='skills-card skills_card'>
                             <h2>
                                 Next.js
                             </h2>
@@ -174,7 +174,7 @@ function Skills() {
                                 </h3>
                             </div>
                         </div>
-                        <div data-speed="1.30" className='skills-card'>
+                        <div data-speed="1.30" className='skills-card skills_card'>
                             <h2>
                                 Vue.js
                             </h2>
@@ -187,7 +187,7 @@ function Skills() {
                                 </h3>
                             </div>
                         </div>
-                        <div data-speed="1.35" className='skills-card'>
+                        <div data-speed="1.35" className='skills-card skills_card'>
                             <h2>
                                 Nuxt.js
                             </h2>
