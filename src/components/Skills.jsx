@@ -43,7 +43,6 @@ function Skills() {
                 opacity: 1,
                 scrollTrigger: {
                     trigger: '.sk_title',
-                    start: 'top',
                     start: 'top 99%',
                     scrub: 5,
                     // markers: true
@@ -59,7 +58,6 @@ function Skills() {
                 opacity: 1,
                 scrollTrigger: {
                     trigger: '.skills_card',
-                    start: 'top',
                     start: 'top 99%',
                     scrub: 5,
                     // markers: true

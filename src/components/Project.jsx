@@ -42,7 +42,6 @@ function Project() {
         scrollTrigger: {
           trigger: '.proj1',
           start: 'top',
-
           scrub: 5,
           // markers: true
         },
@@ -56,7 +55,6 @@ gsap.fromTo('.pr_title',
      opacity:1,
       scrollTrigger: {
         trigger: '.pr_title',
-        start: 'top',
        start: 'top 99%',
         scrub: 5,
         // markers: true
