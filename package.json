@@ -10,7 +10,6 @@
     "aos": "^2.3.4",
     "chart.js": "^4.4.0",
     "gsap": "^3.12.5",
-    "gsap-trial": "^3.12.5",
     "hamburger-react": "^2.5.0",
     "i18next": "^23.7.3",
     "react": "^18.2.0",
