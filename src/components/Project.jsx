@@ -17,7 +17,6 @@ function Project() {
   // язык
     const { t } = useTranslation();
   // язык
-
   useGSAP(()=>{
 
     gsap.fromTo('.pr__line',
