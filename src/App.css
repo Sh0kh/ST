@@ -15,6 +15,7 @@ li{
 }
 body{
   background: var(--background, #282C33);
+  /* overflow: hidden; */
 }
 ::-webkit-scrollbar{
   width: 13px;
@@ -34,3 +35,9 @@ body{
   width: 100px;
   height: 250px ;
 }
+/* .project__wrapper3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+} */

@@ -17,6 +17,7 @@
     height: 200px;
     cursor: pointer;
    border-bottom: 1px solid var(--gray, #ABB2BF);
+   /* object-fit: cover; */
 }
 .project__card{
     display: flex;

@@ -2,6 +2,8 @@
     background: var(--background, #282C33);
     position: relative;
     padding-bottom: 200px;
+    /* width: 1400px; */
+    overflow: hidden;
 }
 .quote1{
 }

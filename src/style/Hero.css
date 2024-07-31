@@ -6,7 +6,7 @@
 .hero__content h1{
     color: var(--white, #FFF);
     font-size: 32px;
-    font-style: normal;
+    font-style: normal; 
     font-weight: 600;
     line-height: normal;
     margin-bottom: 22px;
@@ -67,6 +67,7 @@
     justify-content: space-between;
 }
 .hero__img h2 {
+    
     color: var(--gray, #ABB2BF);
     font-size: 16px;
     font-style: normal;
@@ -80,8 +81,9 @@
     border: 1px solid var(--gray, #ABB2BF);
     background: var(--background, #282C33);
     position: absolute;
-    bottom: 30px;
+    bottom: 0px;
     z-index: 11;
+    /* margin-top: 100px; */
 }
 .hero__img h2 div{
     width: 16px;

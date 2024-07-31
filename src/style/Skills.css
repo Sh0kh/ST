@@ -1,6 +1,7 @@
 .skills{
     background: var(--background, #282C33);
     padding-bottom: 300px;
+    overflow: hidden;
 }
 .skills h1{
     color: var(--white, #FFF);

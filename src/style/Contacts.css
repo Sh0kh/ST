@@ -1,6 +1,7 @@
 .contact{
     background: var(--background, #282C33);
     padding-bottom: 100px;
+    overflow: hidden;
 }
 .title__contact h1{
     color: var(--white, #FFF);

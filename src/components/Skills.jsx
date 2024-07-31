@@ -11,46 +11,77 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
 
 
-gsap.registerPlugin( ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 
 function Skills() {
 
-     // язык
-        const { t } = useTranslation();
+    // язык
+    const { t } = useTranslation();
     // язык
 
-    useGSAP(()=>{
+    useGSAP(() => {
         gsap.fromTo('.skills__line',
-    {
-        x:'180%'
-    },
-    {
-        x:'0%',
-        scrollTrigger: {
-          trigger: '.skills__line',
-          start: 'top 99%',
-          scrub: 4,
-        //   markers: true
-        },
-    }
-)
+            {
+                x: '180%'
+            },
+            {
+                x: '0%',
+                scrollTrigger: {
+                    trigger: '.skills__line',
+                    start: 'top 99%',
+                    scrub: 4,
+                    //   markers: true
+                },
+            }
+        )
+        gsap.fromTo('.sk-title',
+            {
+                opacity: 0,
+            },
+            {
+                opacity: 1,
+                scrollTrigger: {
+                    trigger: '.sk-title',
+                    start: 'top',
+                    start: 'top 99%',
+                    scrub: 5,
+                    // markers: true
+                },
+            }
+        )
+
+        gsap.fromTo('.skills-card',
+            {
+                opacity: 0,
+            },
+            {
+                opacity: 1,
+                scrollTrigger: {
+                    trigger: '.skills-card',
+                    start: 'top',
+                    start: 'top 99%',
+                    scrub: 5,
+                    // markers: true
+                },
+            }
+        )
     })
-  return (
-    <section className='skills'>
-        <div className='container'>
-            <div data-speed="1.1" className='skills__title'>
-                <h1>
-                    <span>#</span>
-                    {t('Skills')}
-                </h1>
-                <div className='skills__line'>
+    return (
+        <section className='skills'>
+            <div className='container'>
+                <div data-speed="1.1" className='skills__title'>
+                    <h1 className='sk-title'>
+                        <span>#</span>
+                        {t('Skills')}
+                    </h1>
+                    <div className='skills__line'>
+
+                    </div>
 
                 </div>
-
-            </div>
-                <div 
-                className='skills__content'>
+                <div
+                    className='skills__content'>
                     <div className='skills-content'>
                         <div data-speed="1.15" className='skills-card'>
                             <h2>
@@ -171,9 +202,9 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-        </div>
-    </section>
-  )
+            </div>
+        </section>
+    )
 }
 
 export default Skills

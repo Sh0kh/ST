@@ -8,7 +8,8 @@ import pr3 from '../img/pr3.png'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
-
+import foto2 from '../img/Screenshot_1.png'
+import foto3 from '../img/Screenshot_2.png'
 gsap.registerPlugin( ScrollTrigger);
 
 function Project() {
@@ -59,6 +60,10 @@ useGSAP(()=>{
                 <ProjectCard img={pr1} skills='GSAP' title='NFT' text={`"${t('web1')}"`} btn='https://nft-st-prollax.netlify.app'/>
                 <ProjectCard img={pr2} skills='React' title='Coca' text={`"${t('web2')}"`} btn='https://bright-zuccutto-74822f.netlify.app'/>
                 <ProjectCard img={pr3} skills='GSAP' title='Gallary' text={`"${t('web3')}"`} btn='https://st-gallary.netlify.app/'/>
+            </div>
+            <div className='project__wrapper2 grid2 '>
+            <ProjectCard  img={foto2} skills='Vue' title='Oltin Vodiy' text={`"${t('web2')}"`} btn='https://oltinvodiyrestaurant.netlify.app/'/>
+            <ProjectCard  img={foto3} skills='React' title='Darxon' text={`"${t('web4')}"`} btn='http://darxon-res.uz/'/>
             </div>
         </div>
     </section>
